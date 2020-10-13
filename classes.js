@@ -1,15 +1,19 @@
 class User {
     firstname;
     age;
+
+    mentir() {
+        this.age = this.age - 10;
+    }
+
+    constructor(toto, tata) {
+        this.firstname = toto;
+        this.age = tata;
+    }
 }
 
-let user = new User();
-user.firstname = 'Jean';
-user.age = 32;
-
-let user2 = new User();
-user2.firstname = 'Sophie';
-user2.age = 41;
+let a = 'Jean';
+let b = 32;
+let user = new User(a, b);
 
 console.log(user);
-console.log(user2);
